@@ -1,5 +1,5 @@
 
 int main(void) {
-	task_7_3_9();
+	task_8_2_10();
 	return 0;
 };
