@@ -6,8 +6,7 @@ center Центр прямоугольника
 
 void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc);
 
-int main()
-{
+int main() {
     int x1, y1, x2, y2;
     int xc, yc;
     scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
@@ -19,8 +18,7 @@ int main()
     return 0;
 }
 
-void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc)
-{
+void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc) {
     *pxc = (xlt + xrb) / 2;
     *pyc = (ylt + yrb) / 2;
 }

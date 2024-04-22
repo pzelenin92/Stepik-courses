@@ -7,8 +7,7 @@ rotateC Поворот вокруг центра
 void rotateC(int *x1, int *y1, int *x2, int *y2);
 void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc);
 
-int main()
-{
+int main() {
     int x1, y1, x2, y2;
     scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
 
@@ -19,8 +18,7 @@ int main()
     return 0;
 }
 
-void rotateC(int *x1, int *y1, int *x2, int *y2)
-{
+void rotateC(int *x1, int *y1, int *x2, int *y2) {
     // координаты центра
     int xc = 0;
     int yc = 0;
@@ -48,8 +46,7 @@ void rotateC(int *x1, int *y1, int *x2, int *y2)
     *y2 += yc;
 }
 
-void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc)
-{
+void center(int xlt, int ylt, int xrb, int yrb, int *pxc, int *pyc) {
     *pxc = (xlt + xrb) / 2;
     *pyc = (ylt + yrb) / 2;
 }
