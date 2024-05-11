@@ -53,8 +53,8 @@ Mkfile.old
 dkms.conf
 
 # I added further files to ignore:
-Solution-1/.vs/
-Solution-1/Project-1/x64/
+C-language-basics-3078/Solution-1/.vs/
+C-language-basics-3078/Solution-1/Project-1/x64/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
