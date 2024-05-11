@@ -1,8 +1,62 @@
-# I added further files to ignore:
+<<<<<<< HEAD
+# Prerequisites
+*.d
 
-#Solution-1/.vs/
-#Solution-1/Project-1/x64/
-#*.vcxproj
-#*.vcxproj.filters
-#*.vcxproj.user
-#*.sln
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# I added further files to ignore:
+Solution-1/.vs/
+Solution-1/Project-1/x64/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+>>>>>>> repo_to_merge/main
