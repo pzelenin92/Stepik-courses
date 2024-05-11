@@ -1,0 +1,8 @@
+# I added further files to ignore:
+
+#Solution-1/.vs/
+#Solution-1/Project-1/x64/
+#*.vcxproj
+#*.vcxproj.filters
+#*.vcxproj.user
+#*.sln
