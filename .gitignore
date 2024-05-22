@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -55,8 +54,14 @@ dkms.conf
 # I added further files to ignore:
 C-language-basics-3078/Solution-1/.vs/
 C-language-basics-3078/Solution-1/Project-1/x64/
+Solution-1/.vs/
+Solution-1/Project-1/x64/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
 *.sln
+<<<<<<< HEAD
+>>>>>>> repo_to_merge/main
+=======
+/Lectures form Youngcoder.ru
 >>>>>>> repo_to_merge/main
