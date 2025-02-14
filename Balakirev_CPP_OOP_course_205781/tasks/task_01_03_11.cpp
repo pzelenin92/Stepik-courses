@@ -9,11 +9,13 @@
 
 - публичные методы:
 
-    void set_person_data(const std::string &fio, const std::string &job, unsigned char old); // заносит в соответствующие поля переданные значения
-    void set_person_data(const Person& p); заносит в соответствующие поля значения из переданного объекта p
-    void get_data(std::string &fio, std::string &job, unsigned char& old); // возвращает через ссылки значения полей объекта
+    void set_person_data(const std::string &fio, const std::string &job, unsigned char old); // заносит в
+соответствующие поля переданные значения void set_person_data(const Person& p); заносит в соответствующие поля значения
+из переданного объекта p void get_data(std::string &fio, std::string &job, unsigned char& old); // возвращает через
+ссылки значения полей объекта
 
-В функции main создайте два объекта структуры Person в виде обычных переменных с именами p1, p2. Занесите в первый объект (p1) данные:
+В функции main создайте два объекта структуры Person в виде обычных переменных с именами p1, p2. Занесите в первый
+объект (p1) данные:
 
 "С.М. Балакирев", "Просветитель", 84
 
@@ -26,31 +28,29 @@ P.S. На экран ничего выводить не нужно.
 #include <iostream>
 #include <string>
 
-struct Person
-{
-    private:
-    std::string fio;  // ФИО
-    std::string job;  // работа
+struct Person {
+   private:
+    std::string fio;    // ФИО
+    std::string job;    // работа
     unsigned char old;  // возраст
-    
-    public:
+
+   public:
     void set_person_data(const std::string &fio, const std::string &job, unsigned char old) {
         this->fio = fio;
         this->job = job;
         this->old = old;
-    } // заносит в соответствующие поля переданные значения
-    void set_person_data(const Person& p){
+    }  // заносит в соответствующие поля переданные значения
+    void set_person_data(const Person &p) {
         this->fio = p.fio;
         this->job = p.job;
         this->old = p.old;
-    } //заносит в соответствующие поля значения из переданного объекта p
-    void get_data(std::string &fio, std::string &job, unsigned char& old){
+    }  //заносит в соответствующие поля значения из переданного объекта p
+    void get_data(std::string &fio, std::string &job, unsigned char &old) {
         fio = this->fio;
         job = this->job;
         old = this->old;
-    } // возвращает через ссылки значения полей объекта
+    }  // возвращает через ссылки значения полей объекта
 };
-
 
 int main(void) {
     // здесь продолжайте функцию main

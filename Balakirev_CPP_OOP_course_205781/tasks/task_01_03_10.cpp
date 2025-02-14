@@ -29,24 +29,20 @@ P.S. На экран ничего выводить не нужно.
 // здесь объявляйте класс
 class TravelBlog {
    private:
-   std::string country;  // страна пребывания
-   short days;   // число дней пребывания
+    std::string country;  // страна пребывания
+    short days;           // число дней пребывания
 
    public:
-   void set_info(const std::string &country, short days){
-    this->country = country;
-    this->days = days;
-   } // заносит в соответствующие поля переданные значения
-   void set_info(const TravelBlog& blog){
-    this->country = blog.country;
-    this->days = blog.days;
-   } // заносит в соответствующие поля значения из переданного объекта blog
-   const std::string& get_country(){
-    return this->country;
-   } // возвращает ссылку на поле country
-   short get_days(){
-    return this->days;
-   } // возвращает значение поля days
+    void set_info(const std::string& country, short days) {
+        this->country = country;
+        this->days = days;
+    }  // заносит в соответствующие поля переданные значения
+    void set_info(const TravelBlog& blog) {
+        this->country = blog.country;
+        this->days = blog.days;
+    }  // заносит в соответствующие поля значения из переданного объекта blog
+    const std::string& get_country() { return this->country; }  // возвращает ссылку на поле country
+    short get_days() { return this->days; }                     // возвращает значение поля days
 };
 
 int main(void) {
