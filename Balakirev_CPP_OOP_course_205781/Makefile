@@ -4,7 +4,10 @@ PP_FLAGS = -Wall -Werror -Wextra -Wpedantic -std=c++17
 FOLDER = tasks/
 FILE:=$(shell ls -t $(FOLDER) | head -n 1 | grep -E 'task(_[0-9]{2}){3}\.cpp')
 
-all: clang build run
+all: clean clang build run
+
+clean:
+	rm a.out
 
 clang:
 	clang-format -i $(FOLDER)*.cpp
